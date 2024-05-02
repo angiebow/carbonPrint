@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD42594D2BE09E8C0030C1C6 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD42594C2BE09E8C0030C1C6 /* DataItem.swift */; };
 		FD6342AA2BDF50DF007E9CD8 /* carbonPrintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342A92BDF50DF007E9CD8 /* carbonPrintApp.swift */; };
 		FD6342AC2BDF50DF007E9CD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342AB2BDF50DF007E9CD8 /* ContentView.swift */; };
 		FD6342AE2BDF50E0007E9CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6342AD2BDF50E0007E9CD8 /* Assets.xcassets */; };
 		FD6342B12BDF50E0007E9CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6342B02BDF50E0007E9CD8 /* Preview Assets.xcassets */; };
+		FD6342BA2BDF511B007E9CD8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342B92BDF511B007E9CD8 /* APIClient.swift */; };
+		FD6342BE2BDF542E007E9CD8 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342BD2BDF542E007E9CD8 /* NewsView.swift */; };
+		FD6342C02BDF54EB007E9CD8 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342BF2BDF54EB007E9CD8 /* NewsArticle.swift */; };
+		FD6342C32BDF56CB007E9CD8 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = FD6342C22BDF56CB007E9CD8 /* CachedAsyncImage */; };
+		FD6342C52BDFE975007E9CD8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342C42BDFE975007E9CD8 /* MainTabView.swift */; };
+		FD6342C72BDFE9B8007E9CD8 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6342C62BDFE9B8007E9CD8 /* CalculateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD42594C2BE09E8C0030C1C6 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		FD6342A62BDF50DF007E9CD8 /* carbonPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carbonPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6342A92BDF50DF007E9CD8 /* carbonPrintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carbonPrintApp.swift; sourceTree = "<group>"; };
 		FD6342AB2BDF50DF007E9CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD6342AD2BDF50E0007E9CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD6342B02BDF50E0007E9CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD6342B92BDF511B007E9CD8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FD6342BD2BDF542E007E9CD8 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		FD6342BF2BDF54EB007E9CD8 /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
+		FD6342C42BDFE975007E9CD8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FD6342C62BDFE9B8007E9CD8 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6342C32BDF56CB007E9CD8 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,9 @@
 		FD6342A82BDF50DF007E9CD8 /* carbonPrint */ = {
 			isa = PBXGroup;
 			children = (
+				FD6342B72BDF50E7007E9CD8 /* API */,
+				FD6342B82BDF50F1007E9CD8 /* Views */,
 				FD6342A92BDF50DF007E9CD8 /* carbonPrintApp.swift */,
-				FD6342AB2BDF50DF007E9CD8 /* ContentView.swift */,
 				FD6342AD2BDF50E0007E9CD8 /* Assets.xcassets */,
 				FD6342AF2BDF50E0007E9CD8 /* Preview Content */,
 			);
@@ -65,6 +80,27 @@
 				FD6342B02BDF50E0007E9CD8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD6342B72BDF50E7007E9CD8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD6342B92BDF511B007E9CD8 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FD6342B82BDF50F1007E9CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD6342AB2BDF50DF007E9CD8 /* ContentView.swift */,
+				FD6342BD2BDF542E007E9CD8 /* NewsView.swift */,
+				FD6342BF2BDF54EB007E9CD8 /* NewsArticle.swift */,
+				FD6342C62BDFE9B8007E9CD8 /* CalculateView.swift */,
+				FD6342C42BDFE975007E9CD8 /* MainTabView.swift */,
+				FD42594C2BE09E8C0030C1C6 /* DataItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = carbonPrint;
+			packageProductDependencies = (
+				FD6342C22BDF56CB007E9CD8 /* CachedAsyncImage */,
+			);
 			productName = carbonPrint;
 			productReference = FD6342A62BDF50DF007E9CD8 /* carbonPrint.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = FD63429D2BDF50DF007E9CD8;
+			packageReferences = (
+				FD6342C12BDF56CB007E9CD8 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = FD6342A72BDF50DF007E9CD8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6342AC2BDF50DF007E9CD8 /* ContentView.swift in Sources */,
+				FD6342BE2BDF542E007E9CD8 /* NewsView.swift in Sources */,
+				FD42594D2BE09E8C0030C1C6 /* DataItem.swift in Sources */,
 				FD6342AA2BDF50DF007E9CD8 /* carbonPrintApp.swift in Sources */,
+				FD6342C72BDFE9B8007E9CD8 /* CalculateView.swift in Sources */,
+				FD6342C02BDF54EB007E9CD8 /* NewsArticle.swift in Sources */,
+				FD6342BA2BDF511B007E9CD8 /* APIClient.swift in Sources */,
+				FD6342C52BDFE975007E9CD8 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD6342C12BDF56CB007E9CD8 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD6342C22BDF56CB007E9CD8 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6342C12BDF56CB007E9CD8 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD63429E2BDF50DF007E9CD8 /* Project object */;
 }
